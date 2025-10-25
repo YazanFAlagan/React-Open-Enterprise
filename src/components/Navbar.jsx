@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -15,7 +16,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-2">
             <a href="#why" className="text-gray-700 hover:text-blue-600 transition">
               Why Open Enterprise
             </a>
@@ -25,7 +26,7 @@ const Navbar = () => {
             <a href="#contribute" className="text-gray-700 hover:text-blue-600 transition">
               Contribute
             </a>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+            <button className="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transiton ">
               Request early access
             </button>
           </div>
@@ -68,7 +69,7 @@ const Navbar = () => {
               <a href="#contribute" className="text-gray-700 hover:text-blue-600 transition">
                 Contribute
               </a>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition w-full">
+              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transiton w-full">
                 Request early access
               </button>
             </div>

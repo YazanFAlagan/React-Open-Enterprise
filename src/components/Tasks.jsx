@@ -1,20 +1,21 @@
 import React from 'react';
 
 const Tasks = () => {
+  // const showAllTasks = true;
   const tasks = [
     {
-      title: 'Ideate a list of features based on the Sociocracy model',
-      description: 'We\'re looking for someone interested in business theory and research that\'ll help us bridge the gap between our s...',
+      title: 'Research collaborative governance models',
+      description: 'Love organizational theory? Help us explore how collaborative governance can shape our platform. Your reserch will directly influence our roadmap.',
       deadline: 'May 15'
     },
     {
-      title: 'Update documentation with FAQs',
-      description: 'Review our community chat for the most frequently asked questions and document answers for our product docs.',
+      title: 'Write answers to common questions',
+      description: 'Our community is asking great questions! Help us document clear, helpful answers that everyone can reference.',
       deadline: 'May 15'
     },
     {
-      title: 'Tutorial video series',
-      description: 'Create a series of video tutorials that cover everything from start to finish on using Open Enterprise.',
+      title: 'Create video tutorials',
+      description: 'Got video skills? We need someone to create friendly easy-to-follow tutorials showing people how to get started with our platform.',
       deadline: 'May 15'
     }
   ];
@@ -23,19 +24,19 @@ const Tasks = () => {
     <section id="contribute" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
-          Help us improve Open Enterprise
+          Join us and make an impact
         </h2>
         <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center mb-12">
-          As an Open Enterprise ourselves, we are actively looking for new talent to join our mission of improving and delivering the Open Enterprise model to the world. Apply for open tasks and earn a stake in our success.
+          We practice what we preach. Help us build and improve our platform, and you'll earn real ownership in what we're creating. Check out what we're working on and jump in wherever you can help!
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
           {tasks.map((task, index) => (
-            <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+            <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl shadow-md hover:shadow-xl transiton">
               <h3 className="text-xl font-bold text-gray-900 mb-3">{task.title}</h3>
               <p className="text-gray-600 mb-4">{task.description}</p>
               <p className="text-sm text-blue-600 font-semibold mb-4">Apply by {task.deadline}</p>
-              <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+              <button className="w-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transiton">
                 Apply Now
               </button>
             </div>
